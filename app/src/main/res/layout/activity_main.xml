@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="314dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="40dp"
+        android:text="Weather app"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="#FDFCFC"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="#FDFCFC"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="734dp"
+        android:layout_height="817dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/wthr" />
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="311dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Enter city name here"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FDFCFC"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="332dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="52dp"
+        android:hint="Temperature will be displayed here"
+        android:textColor="#FBF5F5"
+        android:textColorHint="#FBF7F7"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="230dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="64dp"
+        android:onClick="getweather"
+        android:text="Get temperature"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et" />
+</androidx.constraintlayout.widget.ConstraintLayout>
